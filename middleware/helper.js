@@ -13,7 +13,7 @@ const transport = nodemailer.createTransport({
 
 async function sendEmail(message) {
   try {
-    message.from = 'kotlyaranya1771@gmail.com';
+    message.from = 'reshka201@gmail.com';
 
     const result = await transport.sendMail(message);
     console.log('Email sent:', result);

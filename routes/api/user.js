@@ -29,4 +29,12 @@ router.patch(
   UsersController.updateAvatar
 );
 
+router.get('/verify/:verificationToken', UsersController.verify);
+
+router.get(
+  '/send-verify',
+  createBodyValidator(schemas.verifySchema),
+  UsersController.sendVerify
+);
+
 module.exports = router;
