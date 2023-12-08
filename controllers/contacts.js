@@ -93,7 +93,7 @@ async function addToFavorites(req, res, next) {
   if (req.body.favorite === undefined || req.body.favorite === null) {
     return res
       .status(400)
-      .json({ message: 'missing or invalid "favorite" field' });
+      .json({ message: 'Missing or invalid "favorite" field' });
   }
 
   try {
@@ -135,4 +135,5 @@ module.exports = {
   addContact,
   updateContact,
   addToFavorites,
+  updateStatusContact,
 };
